@@ -1,4 +1,6 @@
 FROM alpine:latest
+LABEL org.opencontainers.image.source=https://github.com/nzapponi/filebrowser-arm32
+
 RUN apk --update add ca-certificates
 RUN apk --update add mailcap
 RUN apk add curl bash git
